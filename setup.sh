@@ -76,6 +76,7 @@ setup_ohmyzsh() {
 	echo "${WARNING}[OH-MY-ZSH] Already exists${RESET}"
     else
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+    sudo apt-get install fonts-powerline -qq -y
 	echo "${SUCCESS}[OH-MY-ZSH] Finished setup${RESET}"
     fi
 }
